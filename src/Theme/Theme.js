@@ -61,26 +61,7 @@ const theme = createTheme({
             white: '#ffffff',
             black: '#000000'
         },
-        warning:{
-            main: '#ffeb3b',
-            dark: '#fbc02d',
-            light: '#ffee58',
-        },
-        error:{
-            main: '#d32f2f',
-            dark: '#b71c1c',
-            light: '#ef5350',
-        },
-        success:{
-            main: '#388e3c',
-            dark: '#1b5e20',
-            light: '#4caf50',
-        },
-        secondary:{
-            main: '#1565c0',
-            dark: '#0d47a1',
-            light: '#1976d2',
-        }
+    
     },
    
 });
