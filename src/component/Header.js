@@ -1,11 +1,18 @@
-import {Grid, Typography} from "@mui/material";
-
+import { Grid, Typography } from "@mui/material";
+import FilterDramaIcon from '@mui/icons-material/FilterDrama';
 const Header = () => {
-    return(
-        <Grid item xs={12} bgcolor={"#1D3973"} p={2} borderRadius={2} >
-            <Typography variant={'h5'}>
-                Weather App
-            </Typography>
+    return (
+        <Grid container item xs={12} bgcolor={"#FFAC42"} color={"#FFF"} p={2} borderRadius={2}  justifyContent={"space-between"}>
+            <Grid item>
+                <Typography variant={'h5'}>
+                    وضعیت آب و هوا
+                </Typography>
+            </Grid>
+            <Grid item>
+                <FilterDramaIcon />
+            </Grid>
+
+
         </Grid>
     )
 }
