@@ -1,7 +1,9 @@
-import {Grid, TextField} from "@mui/material";
+import {Grid, TextField , Typography} from "@mui/material";
 import {Cities} from "../data/cities";
 import MenuItem from '@mui/material/MenuItem';
-const SelectCity = ({city, setCurrency}) => {
+import LocationCityIcon from '@mui/icons-material/LocationCity';
+import "../component/Styles.css"
+const SelectCity = ({city, setCurrency , cityWeather}) => {
 
     const handleChange = (event) => {
         setCurrency(event.target.value);
@@ -9,20 +11,25 @@ const SelectCity = ({city, setCurrency}) => {
 
     return (
         <>
-             {/* <TextField select value={city} onChange={handleChange} SelectProps={{native: true}} variant="filled">
-                 {Cities.map((c) => (
-                     <option key={c.title} value={c.title}>
-                         {c.name}
-                     </option>
-                 ))}
-             </TextField> */}
-            <TextField sx={{width:"200px"}} required id="filled-select-currency" select label="Select"  name={'group'} value={city} onChange={handleChange}  variant="filled">
+           <Grid bgcolor={"#000"} my={5} className={"opacity"} display={"flex"}  justifyContent={"space-between"}  mt={5}  xs={12} md={12}>
+           <Grid md={4} display={"flex"} alignItems={"center"}>
+                <LocationCityIcon />
+                <Typography variant={'h2'} color={"#fff"}  pr={2} >
+                    شهر: {cityWeather.name}
+                </Typography>
+            </Grid>
+            <Grid md={12} xs={8}>
+            <TextField  fullWidth required id="filled-select-currency" select label="Select"  name={'group'} value={city} onChange={handleChange}  variant="filled">
                 {Cities.map((c) => (
-                    <MenuItem sx={{width:"200px"}} key={c.title} value={c.title}>
+                    <MenuItem  key={c.title} value={c.title}>
                         {c.name}
                     </MenuItem>
                 ))}
             </TextField>
+            </Grid>
+         
+           </Grid>
+          
       </>
     )
 }
