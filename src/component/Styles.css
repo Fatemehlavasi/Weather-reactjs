@@ -1,0 +1,11 @@
+.hero {
+    background-image: url('../images/image.jpeg');
+   
+}
+.hero1 {
+    background-image: url('../images/image2.webp');
+   
+}
+.opacity{
+ opacity: 0.6;
+}
