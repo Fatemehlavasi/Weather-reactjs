@@ -8,13 +8,13 @@ const theme = createTheme({
           {props:{variant:'mainButton'},
            style:{
             color: '#fff',
-            backgroundColor: 'rgb(66, 133, 242)',
+            backgroundColor: '#EDD498',
             borderRadius: '4px',
             textAlign: 'center',
             padding:12,
             width:'100%',
            '&:hover': {
-            backgroundColor: 'rgb(66, 133, 242)',
+            backgroundColor: '#EDD498',
            }
            }
         },        
@@ -42,7 +42,8 @@ const theme = createTheme({
               }
             },
             'a': {
-               textDecoration:'none'
+               textDecoration:'none',
+               
             },
             
         }
@@ -63,6 +64,46 @@ const theme = createTheme({
         },
     
     },
+    typography:{
+      fontFamily:'IRANSANS', 
+      h1: {
+      
+        fontSize: '2.5rem',
+        fontWeight: 900,
+        lineHeight: 1.5,
+        color: 'rgba( 0.85,  0,  0.85, 0.85)'
+    },
+      h2: {
+  
+        fontSize: '1.80rem',
+        fontWeight: 800,
+        lineHeight: 1.5,
+        color:'rgba(0, 0, 0, 0.85)'
+       
+        },
+      h3: {
+     
+        fontSize: 12,
+        fontWeight: 700,
+        lineHeight: '18px',
+        color:'rgba(0, 0, 0, 0.85)'
+    },
+    subtitle1:{
+    
+      fontSize:"0.8rem",
+      fontWeight: 400,
+      lineHeight: 1.5,
+  
+    },
+    subtitle2:{
+      
+      fontSize: 14,
+      fontWeight: 400,
+      lineHeight: '21px',
+  
+    },
+   
+    }  
    
 });
 
