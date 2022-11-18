@@ -7,9 +7,9 @@ export const Cities = [
     {name: 'شیراز', title: 'shiraz'},
     {name: 'مشهد', title: 'mashhad'},
     {name: 'قم', title: 'qom'},
-    {name: 'پاریس', title: 'paris'},
-    {name: 'نیویورک', title: 'new%20york'},
-    {name: 'دهلی قدیم', title: 'dehli'},
+    {name: 'ساوه', title: 'save'},
+    {name: 'تربت جام', title: 'torbatjam'},
+    {name: 'نیشابور', title: 'neyshabor'},
     {name: 'تورنتو', title: 'toronto'},
     {name: 'برلین', title: 'berlin'},
 ]
