@@ -15,7 +15,7 @@ const WeatherCard = ({ cityWeather, city }) => {
                             <AirIcon />
                         </Typography>
                         <Typography variant={'body1'} textAlign={"center"}>
-                            0 {cityWeather?.wind?.speed}
+                            {cityWeather?.wind?.speed}
                         </Typography>
                     </Grid>
                     <Grid mt={5}>
@@ -32,7 +32,7 @@ const WeatherCard = ({ cityWeather, city }) => {
                         </Typography>
 
                         <Typography variant={'body1'} textAlign={"center"}>
-                            0  {cityWeather?.clouds?.all}
+                             {cityWeather?.clouds?.all}
                         </Typography>
                     </Grid>
                     <Grid mt={5}>
@@ -47,7 +47,7 @@ const WeatherCard = ({ cityWeather, city }) => {
                             <ThermostatAutoIcon />
                         </Typography>
                         <Typography variant={'body1'} textAlign={"center"}>
-                            0  {`${cityWeather?.main?.temp}ºC`}
+                            {`${cityWeather?.main?.temp}ºC`}
                         </Typography>
                     </Grid>
                     <Grid mt={5}>
@@ -62,7 +62,7 @@ const WeatherCard = ({ cityWeather, city }) => {
                             <WbSunnyIcon />
                         </Typography>
                         <Typography variant={'body1'} textAlign={"center"}>
-                            0   {cityWeather?.weather?.[0]?.description}
+                             {cityWeather?.weather?.[0]?.description}
                         </Typography>
                     </Grid>
                     <Grid mt={5}>
