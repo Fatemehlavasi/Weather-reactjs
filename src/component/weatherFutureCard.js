@@ -23,7 +23,7 @@ const WeatherFutureCard = ({ cityWeatherFuture, index }) => {
             <Grid item mt={2} display={"flex"} color={"#fff"}>
                 <ThermostatAutoIcon />
                 <Typography variant={'body1'} pr={2} >
-                    دما: 0 {cityWeatherFuture?.[index]?.main?.temp}
+                    دما:  {cityWeatherFuture?.[index]?.main?.temp}
                 </Typography>
             </Grid>
             <Grid item mt={2} mb={3} display={"flex"} color={"#fff"} >
