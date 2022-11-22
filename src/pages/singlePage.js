@@ -25,7 +25,7 @@ const SinglePage = () => {
 
     return (
         <Grid container item dir={'rtl'} alignItems={'center'} justifyContent={'center'} md={12} flexDirection={"column"} >
-            <Grid bgcolor={"red"} mt={"5"} className={"hero1"}>
+            <Grid mt={"5"} className={"hero1"}>
                 <Header />
                 <Grid container item md={12} bgcolor={"#000"} className={"opacity"} flexDirection={"column"} mt={5}>
                     <Grid item>

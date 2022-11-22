@@ -12,13 +12,13 @@ const SelectCity = ({city, setCurrency , cityWeather}) => {
     return (
         <>
            <Grid bgcolor={"#000"} my={5} className={"opacity"} display={"flex"}  justifyContent={"space-between"}  mt={5}  xs={12} md={12}>
-           <Grid md={4} display={"flex"} alignItems={"center"}>
-                <LocationCityIcon />
-                <Typography variant={'h2'} color={"#fff"}  pr={2} >
+           <Grid md={4} display={"flex"} alignItems={"center"} color={"#FFF"}>
+                <LocationCityIcon  />
+                <Typography fontSize={"20px"} color={"#fff"}  pr={2} >
                     شهر: {cityWeather.name}
                 </Typography>
             </Grid>
-            <Grid md={12} xs={8} bgcolor={"#ffac42"}>
+            <Grid md={12} xs={8} bgcolor={"#FFF"}>
             <TextField  fullWidth required id="filled-select-currency" select label="Select"  name={'group'} value={city} onChange={handleChange}  variant="filled">
                 {Cities.map((c) => (
                     <MenuItem  key={c.title} value={c.title}>
