@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,17 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  direction: rtl;
+
 }
+a{
+  text-decoration: none;
+  list-style-type: none;
+}
+@font-face {
+    font-family: "IRANSANS";  
+    src: 
+      url("./Font//iranyekanwebregular.woff2") format("woff2");
+  }

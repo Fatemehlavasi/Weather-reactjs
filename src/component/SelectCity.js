@@ -18,7 +18,7 @@ const SelectCity = ({city, setCurrency , cityWeather}) => {
                     شهر: {cityWeather.name}
                 </Typography>
             </Grid>
-            <Grid md={12} xs={8}>
+            <Grid md={12} xs={8} bgcolor={"#ffac42"}>
             <TextField  fullWidth required id="filled-select-currency" select label="Select"  name={'group'} value={city} onChange={handleChange}  variant="filled">
                 {Cities.map((c) => (
                     <MenuItem  key={c.title} value={c.title}>

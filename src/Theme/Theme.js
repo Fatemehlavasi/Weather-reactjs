@@ -46,6 +46,7 @@ const theme = createTheme({
                
             },
             
+            fontFamily:'IRANSANS', 
         }
   
         }
